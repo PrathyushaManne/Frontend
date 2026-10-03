@@ -1,0 +1,39 @@
+<!-- Using splice
+1)remove the first element from an array 
+Input: [1, 2, 3, 4]
+Output: [2, 3, 4]-->
+<!-- splice() => Add, remove, or replace elements
+in the original array.
+
+we can =>
+1. Remove elements
+2. Insert elements
+3. Replace elements
+4. Remove multiple elements
+5. Modify the original array
+
+we can't =>
+1. Create a copy of an array safely
+2. Preserve the original array
+
+Reason:
+splice() always changes the original array. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.Remove First Element</title>
+</head>
+<body>
+    <h1>1.Remove First Element</h1>
+    <script>
+        function removeFirstElement(){
+        let numbers = [1,2,3,4];
+        numbers.splice(0,1);
+        console.log(numbers);
+        }
+        removeFirstElement();
+    </script>
+</body>
+</html>
