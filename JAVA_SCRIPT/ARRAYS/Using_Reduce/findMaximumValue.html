@@ -1,0 +1,27 @@
+<!-- 3)find the maximum value in an array 
+Input: [5, 1, 8, 3]
+Output: 8-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.Find Maximum Value</title>
+</head>
+<body>
+    <h1>3.Find Maximum Value</h1>
+    <script>
+      function findMaximum(){
+        let numbers = [5,1,8,3];
+        let result = numbers.reduce(function(max,num){
+        if(num > max){
+        return num;
+        }
+        return max;
+        });
+        console.log(result);
+        }
+        findMaximum();  
+    </script>
+</body>
+</html>

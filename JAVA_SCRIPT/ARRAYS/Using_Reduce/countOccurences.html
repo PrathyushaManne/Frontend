@@ -1,0 +1,30 @@
+<!-- 4)count the occurrences of each item in an array 
+Input: ["apple", "banana", "apple"]
+Output: { a   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.Count Occurrences</title>
+</head>
+<body>
+    <h1>4.Count Occurrences</h1>
+    <script>
+        function countItems(){
+        let fruits = ["apple","banana","apple","StrawBerry","Cherry","BlueBerry","StrawBerry"];
+        let result = fruits.reduce(function(count,fruit){
+        if(count[fruit]){
+            count[fruit]++;
+        }
+        else{
+            count[fruit] = 1;
+        }
+            return count;
+        },{});
+        console.log(result);
+        }
+        countItems();
+    </script>
+</body>
+</html>

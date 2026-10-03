@@ -1,0 +1,44 @@
+<!-- Using reduce
+1)calculate the total sum of an array of numbers 
+Input: [1, 2, 3, 4]
+Output: 10 -->
+<!-- reduce() => Combine all array elements
+into a single final result.
+
+we can =>
+1. Calculate sum
+2. Find maximum value
+3. Find minimum value
+4. Count occurrences
+5. Create objects from arrays
+6. Calculate averages
+
+we can't =>
+1. Easily return selected elements
+2. Transform every element into a new array
+3. Replace map() or filter() for simple tasks
+
+Reason:
+reduce() is designed to produce one accumulated result. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Sum of Numbers</title>
+</head>
+<body>
+    <h1>1. Sum of Numbers</h1>
+    <script>
+        function totalSum(){
+        let numbers = [1,2,3,4];
+        let result = numbers.reduce(function(sum,num){
+        return sum + num;
+        },0);
+        console.log(result);
+        }
+        totalSum();
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- 2)create an object from an array of key-value pairs 
+Input: [["name", "Alice"], ["age", 25]]
+Output: { name: "Alice", age: 25 } -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.Create Object</title>
+</head>
+<body>
+    <h1>2.Create Object</h1>
+    <script>
+        function createObject(){
+        let data = [["name","Alice"],["age",25]];
+        let result = data.reduce(function(obj,item){
+        obj[item[0]] = item[1];
+        return obj;
+        },{});
+        console.log(result);
+        }
+        createObject();
+    </script>
+</body>
+</html>
