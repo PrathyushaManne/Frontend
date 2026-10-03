@@ -1,0 +1,22 @@
+<!-- 3)Add prefix to each string in an array of names
+Input: ["Alice", "Bob", "Charlie"], Prefix: "Mr. "
+Output: ["Mr. Alice", "Mr. Bob", "Mr. Charlie"]
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.Add Prefix</title>
+</head>
+<body>
+    <h1>3.Add Prefix</h1>
+    <script>
+        let names = ["Alice","Bob","Charlie"];
+        let result = names.map(function(name){
+            return "Mr."+name;
+        });
+        console.log(result);
+    </script>
+</body>
+</html>

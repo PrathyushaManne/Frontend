@@ -1,0 +1,29 @@
+<!-- 4)extract the first character of each string in an array
+Input: ["apple", "banana", "cherry"]
+Output: ["a", "b", "c"]    map ,charAt()
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.First Character Of Each String</title>
+</head>
+<body>
+    <h1>4.First Character Of Each String</h1>
+    <script>
+        let fruits = ["apple", "banana", "cherry"];
+        // let result = fruits.map(function(fruit){
+        //     if(fruit === "apple"){
+        //         return fruit;
+        //     }
+            
+        // });
+        // console.log(result);
+
+        let result = fruits.filter((fruit) => fruit === "apple");
+        console.log(result);
+        
+    </script>
+</body>
+</html>

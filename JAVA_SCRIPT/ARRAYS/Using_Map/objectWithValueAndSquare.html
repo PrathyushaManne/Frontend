@@ -1,0 +1,24 @@
+<!-- 10)Create an array of objects with original values and their squares
+Input: [1, 2, 3]
+Output: [{ value: 1, square: 1 }, { value: 2, square: 4 }, { value: 3, square: 9 }] -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.ObjectWithValueSquare</title>
+</head>
+<body>
+    <h1>10.Objects With Value And Square</h1>
+    <script>
+        let numbers = [1,2,3];
+        let result = numbers.map(function(num){
+            return {
+                value : num,
+                square : num * num
+            };
+        });
+        console.log(result);
+    </script>
+</body>
+</html>

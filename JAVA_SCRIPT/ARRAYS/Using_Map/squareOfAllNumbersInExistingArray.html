@@ -1,0 +1,28 @@
+<!-- Using map
+1)create a new array that contains the squares of all numbers in an existing array
+Input: [1, 2, 3, 4]
+Output: [1, 4, 9, 16] -->
+<!-- map() => Change every element in an array
+and return a new array.
+we can =>1.Square numbers
+         2.Convert LowerCaseToUpprerCase
+         3.Add Prefix/suffix
+we can't => remove specific element-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.Square Of Numbers.</title>
+</head>
+<body>
+    <h1>1.Square Of Numbers</h1>
+    <script>
+        let numbers = [1,2,3,4];
+        let result = numbers.map(function(num){
+            return num * num;
+        });
+        console.log(result);
+    </script>
+</body>
+</html>

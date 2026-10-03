@@ -1,0 +1,22 @@
+<!-- 6)Multiply each number in an array by its index
+Input: [2, 3, 5, 7]
+Output: [0, 3, 10, 21] -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.MultiplybyIndex</title>
+</head>
+<body>
+    <h1>6.Multiply by Index</h1>
+    <script>
+        let numbers = [3,5,8,2];
+        let result = numbers.map(function(num,index,something){
+            console.log(something);
+            return num * index;
+        });
+        console.log(result);
+    </script>
+</body>
+</html>
