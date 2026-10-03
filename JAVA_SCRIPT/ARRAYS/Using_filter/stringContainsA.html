@@ -1,0 +1,25 @@
+<!-- 4) find all strings in an array that contain the letter 'a'?
+Input: ["apple", "banana", "cherry"]
+Output: ["apple", "banana"]   // filter ,includes -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.String Containing charcter a</title>
+</head>
+<body>
+    <h1>4.String Containing charcter a</h1>
+    <script>
+        function filterStrings(){
+            let strings = ["almonds","cashews","pumpkin seeds","sunflower seeds"];
+            let result = strings.filter(function(str){
+                return str.includes("a"); 
+                // includes() checcks whether a  value exists or not.
+            });
+            console.log(result);
+        }
+        filterStrings();
+    </script>
+</body>
+</html>

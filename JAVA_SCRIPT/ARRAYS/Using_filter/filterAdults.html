@@ -1,0 +1,24 @@
+<!-- 3) filter an array of people to include only those older than 18?
+Input: [{ name: "Alice", age: 22 }, { name: "Bob", age: 17 }]
+Output: [{ name: "Alice", age: 22 }]-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.FilterAdults</title>
+</head>
+<body>
+    <h1>3.Filter Adults</h1>
+    <script>
+        function  filterAdults(){
+            let people = [{name: "Dhanya", age: 24},{name: "Ajju", age: 17}];
+            let result = people.filter(function(person){
+                return person.age > 18;
+            });
+            console.log(result);
+        }
+        filterAdults();
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- 2)Given an array of objects, filter those objects based on a specific property value( Property: age > 18)
+Input: [{ age: 20 }, { age: 15 }, { age: 18 }],
+Output: [{ age: 20 }] -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.Filter Objects With age</title>
+</head>
+<body>
+    <h1>2.Filter Objects With age</h1>
+    <script>
+        function filterAge(){
+            let people = [{age: 20},{age: 15},{age: 18}];
+            let result = people.filter(function(person){
+                return person.age > 18;
+            });
+            console.log(result);
+        }
+        filterAge();
+    </script>
+</body>
+</html>

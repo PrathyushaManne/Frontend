@@ -1,0 +1,41 @@
+<!-- 1) filter out all numbers less than 10 from an array
+  Input: [5, 10, 15, 3, 20]
+   Output: [10, 15, 20] -->
+<!-- filter() => Select only the elements that satisfy a condition
+and return a new array.
+
+we can =>
+1. Filter numbers based on a condition
+2. Get adults (age > 18)
+3. Find strings containing a specific character
+4. Remove unwanted data
+5. Remove duplicate values (with additional logic)
+
+we can't =>
+1. Modify every element
+2. Transform data (e.g., square all numbers)
+3. Add new values to each element
+
+Reason:
+filter() is used for selecting elements, not modifying them. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.FilterNumbers</title>
+ </head>
+ <body>
+    <h1>1.Filter Numbers</h1>
+    <script>
+        function  filterNumbers(){
+            let numbers = [5,10,15,3,20];
+            let result = numbers.filter(function(num){
+                // filter() is an array method that creates a new array containing only the elements that satisfy a condition.
+                return num >= 10;
+            });
+           console.log(result); 
+        }
+    </script>
+ </body>
+ </html>

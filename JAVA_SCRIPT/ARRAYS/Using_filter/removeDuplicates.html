@@ -1,0 +1,25 @@
+<!-- 5)remove all duplicate values from an array 
+Input: [1, 2, 2, 3, 4, 4]
+Output: [1, 2, 3, 4]  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.RemoveDuplicates</title>
+</head>
+<body>
+    <h1>5.Remove Duplicates</h1>
+    <script>
+        function  removeDuplicates(){
+            let numbers =  [1,2,3,4,5,6,6,7,8];
+            let result = numbers.filter(function(num,index){
+                return numbers.indexOf(num) == index;
+                // indexOf() is a method used to return the position or index of the first occurrence of a value.
+            });
+            console.log(result);
+        }
+        removeDuplicates();
+    </script>
+</body>
+</html>
