@@ -1,0 +1,42 @@
+<!-- Using forEach
+1)log each element of an array to the console
+Input: ["apple", "banana", "cherry"]
+Output: Logs: "apple", Logs: "banana", Logs: "cherry"
+ -->
+<!-- forEach() => Execute an action on every element
+in an array.
+
+we can =>
+1. Print array elements
+2. Calculate sum
+3. Update object properties
+4. Perform operations on each element
+5. Create a new array manually using push()
+
+we can't =>
+1. Return a new transformed array automatically
+2. Filter elements directly
+3. Stop looping using break
+
+Reason:
+forEach() is mainly used for performing actions, not creating new arrays. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.Print Fruits</title>
+</head>
+<body>
+    <h1>1.Print Fruits</h1>
+    <script>
+        function printFruits(){
+            let fruits = ["BlueBerry","StrawBerry","Cherry","WaterMelon"];
+            fruits.forEach(function(fruit){
+                console.log(fruit);
+            });
+        }
+        printFruits();
+    </script>
+</body>
+</html>

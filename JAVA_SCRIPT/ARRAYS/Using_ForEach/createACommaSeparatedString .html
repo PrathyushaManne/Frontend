@@ -1,0 +1,42 @@
+<!-- 5)create a comma-separated string from an array of names 
+Input: ["Alice", "Bob", "Charlie"]
+Output: "Alice, Bob, Charlie"  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.Create A Comma Separated String </title>
+</head>
+<body>
+    <h1>5.Create A Comma Separated String</h1>
+    <script>
+        function createString() {
+
+        let names = ["Alice", "Bob", "Charlie"];
+
+        let result = "";
+
+        names.forEach(function(name, index) {
+
+            if (index == names.length - 1) {
+
+                result = result + name;
+
+            }
+
+            else {
+
+                result = result + name + ", ";
+
+            }
+
+        });
+
+        console.log(result);
+
+    }
+    createString();
+    </script>
+</body>
+</html>

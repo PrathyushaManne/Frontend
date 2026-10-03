@@ -1,0 +1,25 @@
+<!--4) modify each object in an array to add a new property( New Property: age: 25)
+Input: [{ name: "Alice" }, { name: "Bob" }],
+Output: [{ name: "Alice", age: 25 }, { name: "Bob", age: 25 }]
+ -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.Add Age Property To Each Object</title>
+  </head>
+  <body>
+    <h1>4.Add Age Property To Each Object</h1>
+    <script>
+        function addAgeProperty(){
+            let people = [{name:"Dhanya"},{name:"Sandy"}];
+            people.forEach(function(person){
+                person.age = 25;
+            });
+            console.log(people);
+        }
+        addAgeProperty();
+    </script>
+  </body>
+  </html>

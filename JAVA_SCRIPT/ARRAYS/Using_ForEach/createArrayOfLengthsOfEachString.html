@@ -1,0 +1,24 @@
+<!-- 3)create a new array of lengths of each string in an array 
+Input: ["apple", "banana", "cherry"]
+Output: [5, 6, 6] -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.Create Array Of Lengths Of Each String</title>
+</head>
+<body>
+    <h1>3.3.Create Array Of Lengths Of Each String</h1>
+    <script>
+        function findLengths(){
+            let words = ["apple","banana","cherry"];
+             let lengths = words.forEach(function(word){
+                lengths.push(word.length);
+            });
+            console.log(lengths);
+        }
+        findLengths();
+    </script>
+</body>
+</html>
